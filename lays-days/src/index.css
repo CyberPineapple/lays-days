@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "GothamPro";
+  src: url(./fonts/GothamPro.woff) format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face{
+  font-family: "GothamPro-Medium";
+  src: url(./fonts/GothamPro-Medium.woff) format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: GothamPro;
+}
+
+.app{
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: 'h c';
+  grid-template-columns: 150px 1fr;
+}
+
+.header{
+  grid-area: h;
+  background-color: #F6F6F6;
+}
+
+.menu{
+  cursor: pointer;
+  padding-top: 18px;
+  position: fixed;
+}
+
+.menu-logo{
+  width: 150px;
+}
+
+.menu-logo-icon {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  background: url(./images/lays_icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 97px 85px;
+}
+
+.menu-logo-text{
+  width: 100%;
+  color: #f73934;
+  font-size: 16px;
+  font-family:  GothamPro-Medium;
+  font-weight: 900;
+  text-align: center;
+  left: 30px;
+  margin-top: 6px;
+}
+
+.menu-button-layout{
+  margin-top: 86px;
+}
+
+.menu-button{
+  margin-bottom: 45px;
+}
+
+.menu-button-text{
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  color: #7D7D7D;
+  font-size: 14px;
+}
+
+.menu-button .menu-button-icon-1{
+  height: 50px;
+  width: 100%;
+  background-position: 49% center;
+  background-image: url(./images/button_menu_1.png);
+  background-repeat: no-repeat;
+}
+
+.menu-button .menu-button-icon-2{
+  height: 55px;
+  width: 100%;
+  background-position: center 52%;
+  background-image: url(./images/button_menu_2.png);
+  background-repeat: no-repeat;
+}
+
+.content{
+  grid-area: c;
+  background-color: #FFDF01
+}
