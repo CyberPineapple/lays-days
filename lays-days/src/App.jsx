@@ -32,8 +32,18 @@ export default class App extends React.Component {
                     <div className="content-section-1"></div>
                 </div>
                 <div className="content-section-2">
-                    <div className="1"></div>
-                    <div className="2"></div>
+                    <div className="content-section-2-1"></div>
+                    <div className="content-section-2-2">
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/1.dc59205a.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/2.09d5f843.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/3.416330f5.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/4.71d17a4f.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/5.d0f1531e.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/6.d542dd6f.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/7.7c6c40b0.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/8.0a2ab336.png);" className="content-section-2-images"></div>
+                        <div style="background-image: url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/9.4c9c4447.png);" className="content-section-2-images"></div>
+                    </div>
                 </div>
             </div>
       </div>
