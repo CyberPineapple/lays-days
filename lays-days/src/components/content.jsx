@@ -33,7 +33,11 @@ export default class Content extends React.Component{
                     <div className="content-section-3-1 wow fadeInLeft"></div>
                     <div className="content-section-3-2 wow fadeInRight"></div>
                 </div>
-
+                <div className="content-section-4">
+                    <div className="content-section-4-1 wow fadeInLeft"></div>
+                    <div className="content-section-4-2 wow fadeInRight"></div>
+                </div>
+                <div className="footer"></div>
             </div>
         )
     }
