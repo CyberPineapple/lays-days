@@ -24,7 +24,6 @@ body {
   grid-template-columns: 150px 1fr;
 }
 
-<<<<<<< HEAD
 
 
 .content{
@@ -103,13 +102,6 @@ body {
   background-size: cover;
   width: 1rem;
   height: 2.2rem;
-=======
-
-
-.content{
-  grid-area: c;
-  background-color: #FFDF01;
->>>>>>> 35201498b817de05fd5b9d45c50c1358cf1285de
 }
 
 .content-section-3-2{
@@ -143,7 +135,6 @@ body {
   background-size: cover;
   transition-duration: 10s; 
 }
-<<<<<<< HEAD
 
 .content-section-4-2:before{
   content: '';
@@ -165,21 +156,6 @@ body {
   height: 100%;
   background-image: url(./images/lays_block.1e4024ad.jpg);
   background-size: cover;
-=======
-.content-section-2-2{
-  box-sizing: border-box;
-  left: 50%;
-  top: 0;
-  position: absolute;
-  background-color: white;
-  width: 50%;
-  height: 100%;
-  padding: 0.7rem;
-  display: grid;
-  grid-gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
->>>>>>> 35201498b817de05fd5b9d45c50c1358cf1285de
 }
 
 @media screen and (max-width: 1307px){

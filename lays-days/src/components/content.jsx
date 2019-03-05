@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import WOW from 'wowjs';
 
 export default class Content extends React.Component{
@@ -7,12 +6,6 @@ export default class Content extends React.Component{
     componentDidMount(){
         new WOW.WOW().init();
     }
-=======
-// import content from './conten.module.css';
-
-export default class Content extends React.Component{
-
->>>>>>> 35201498b817de05fd5b9d45c50c1358cf1285de
 
     render() {
         let images = [
@@ -29,20 +22,12 @@ export default class Content extends React.Component{
 
         return (
             <div className="content">
-<<<<<<< HEAD
                 <div className="content-section-1 wow fadeInRight"></div>
                 <div className="content-section-2 wow fadeInLeft">
-=======
-                <div className="animation-left">
-                    <div className="content-section-1"></div>
-                </div>
-                <div className="content-section-2">
->>>>>>> 35201498b817de05fd5b9d45c50c1358cf1285de
                     <div className="content-section-2-1"></div>
                     <div className="content-section-2-2">
                         {images}
                     </div>
-<<<<<<< HEAD
                 </div>
                 <div className="content-section-3">
                     <div className="content-section-3-1 wow fadeInLeft"></div>
@@ -53,10 +38,6 @@ export default class Content extends React.Component{
                     <div className="content-section-4-2 wow fadeInRight"></div>
                 </div>
                 <div className="footer"></div>
-=======
-                    <div className="content-section-3"></div>
-                </div>
->>>>>>> 35201498b817de05fd5b9d45c50c1358cf1285de
             </div>
         )
     }
