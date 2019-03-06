@@ -23,15 +23,7 @@ export default class Content extends React.Component{
         return (
             <div className="content">
                 <div className="content-section-1 wow fadeInRight">
-                    <div className="item-section-1">
-                        <div className="section-1-icon-1"></div>
-                        <p className="text-item-section-1"></p>
-                        <p className="hashtag"></p>
-                    </div>
-                    <div className="item-section-1"></div>
-                    <div className="item-section-1"></div>
-                    <div className="text-block-section-1">
-                    </div>
+
                 </div>
                 <div className="content-section-2 wow fadeInLeft">
                     <div className="content-section-2-1"></div>
