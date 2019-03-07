@@ -299,39 +299,6 @@ body {
   color: #f73934;
 }
 
-.SlideInLeft{
-  left: 25%;
-  animation-name: slideInLeft;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  opacity: 0;
-}
-
-@keyframes slideInLeft{
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-.SlideInRight{
-  left: 25%;
-  animation-name: slideInRight;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-fill-mode: both;
-  opacity: 0;
-}
-
-@keyframes slideInRight{
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-
 @media (max-width:680px) {
   body {
     height: auto;
