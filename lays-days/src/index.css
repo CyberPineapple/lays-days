@@ -11,6 +11,13 @@
   font-weight: normal;
 }
 
+@font-face{
+  font-family: "GothamPro";
+  src: url(./fonts/GothamPro-Bold.woff);
+  font-style: normal;
+  font-weight: bold;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -46,7 +53,6 @@ body {
   background-repeat: no-repeat;
   background-position: 10% 50%;
   background-size: cover;
-
 }
 
 .content-section-2{
@@ -266,8 +272,63 @@ body {
   animation-duration: 1s;
 }
 
+.content-section-1 .text-block{
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1.9rem;
+  color: #f73934;
+  line-height: 1.5rem;
+}
+.content-section-1 .text-block h1{
+  font-style: Gotham-medium;
+  font-size: 2.15rem;
+  font-weight: 530;
+  letter-spacing: 0.2rem;
+}
+
+.content-section-1 .text-block p{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.content-section-1 .text-block span{
+  font-size: 2rem;
+  font-weight: 900;
+}
+
 .hashtag{
   color: #f73934;
+}
+
+.SlideInLeft{
+  left: 25%;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes slideInLeft{
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.SlideInRight{
+  left: 25%;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  opacity: 0;
+}
+
+@keyframes slideInRight{
+  100% {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 

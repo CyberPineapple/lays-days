@@ -46,7 +46,10 @@ export default class Content extends React.Component{
                         <p className="text wow fadeIn">Выигрывай</p>
                         <p className="text wow fadeIn">призы</p>
                     </div>
-                    <div className="text-block-section-1">
+                    <div className="text-block">
+                        <h1 className="text">ЛЕТО</h1>
+                        <p className="text">вкуснее</p>
+                        <p className="text">c <span>Lay's</span></p>
                     </div>
                 </div>
                 <div className={"content-section-2 wow "+animationSlideLeft}>
