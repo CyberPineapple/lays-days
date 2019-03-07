@@ -11,9 +11,12 @@
   font-weight: normal;
 }
 
-body {
+*{
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: GothamPro;
 }
 
@@ -27,6 +30,7 @@ body {
 
 
 .content{
+  position: relative;
   grid-area: c;
   background-color: #FFDF01;
 }
@@ -35,6 +39,8 @@ body {
 .content-section-1{
   position: relative;
   height: 14.5rem;
+  width: 100%;
+  top: 0;
   box-sizing: border-box;
   background-image: url(./images/background_section_1.jpg);
   background-repeat: no-repeat;
@@ -114,6 +120,7 @@ body {
   background-image: url(./images/about_img.3f56954a.jpg);
   background-position: 55% 56%;
   background-size: 112%;
+  background-repeat: no-repeat;
 }
 
 .content-section-4{
@@ -133,8 +140,9 @@ body {
   width: 15.65rem;
   height: 100%;
   background-image: url(./images/lays_img.5f4a68cd.jpg);
-  background-size: cover;
+  background-size: 100%;
   transition-duration: 10s;
+  background-repeat: no-repeat;
 }
 
 .content-section-4-2:before{
@@ -164,6 +172,104 @@ body {
   width: 100%;
   background-color: #3C3C3C;
 }
+
+.item-section-1{
+  position: absolute;
+  left: 2rem;
+  width: 3.2rem;
+  padding-top: 1.7rem;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+.item-section-1 .icon{
+  margin: auto;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(./images/photo.png);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 91%;
+  margin-bottom: 0.4rem;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+.item-section-1 .text{
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+  text-align: center;
+  animation-delay: 0.8s;
+  animation-duration: 1s;
+}
+
+.item-section-2{
+  position: absolute;
+  top: -0.01rem;
+  left: 6.15rem;
+  width: 3.2rem;
+  padding-top: 1.7rem;
+}
+
+.item-section-2 .icon{
+  margin: auto;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(./images/heart.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 90%;
+  margin-bottom: 0.4rem;
+  animation-delay: 1.2s;
+  animation-duration: 1s;
+}
+
+.item-section-2 .text{
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+  text-align: center;
+  animation-delay: 1.2s;
+  animation-duration: 1s;
+}
+
+.item-section-3{
+  position: absolute;
+  left: 10.26rem;
+  width: 3.2rem;
+  padding-top: 1.7rem;
+}
+
+.item-section-3 .icon{
+  margin: auto;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url(./images/box.png);
+  background-repeat: no-repeat;
+  background-position: 60% 20%;
+  background-size: 2.4rem;
+  margin-bottom: 0.4rem;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+}
+
+.item-section-3 .text{
+  margin-bottom: 0.1rem;
+  font-size: 0.4rem;
+  text-align: center;
+  animation-delay: 1.6s;
+  animation-duration: 1s;
+}
+
+.hashtag{
+  color: #f73934;
+}
+
 
 @media (max-width:680px) {
   body {

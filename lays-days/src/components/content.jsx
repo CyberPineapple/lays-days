@@ -20,32 +20,48 @@ export default class Content extends React.Component{
             <div style={{"background-image": "url(https://pepsico-lays-yellow-trend.snpdev.ru/images/stub/9.4c9c4447.png)", "background-size": "cover"}}></div>,
         ]
 
+        let screenWidth = document.body.clientWidth;
+            let animationSlideLeft = '';
+            let animationSlideRight = '';
+        if (screenWidth > 640){
+            animationSlideLeft = 'fadeInLeft';
+            animationSlideRight = 'fadeInRight';
+        } 
         return (
             <div className="content">
-                <div className="content-section-1 wow fadeInRight">
+                <div className={"content-section-1 wow "+animationSlideRight} >
                     <div className="item-section-1">
-                        <div className="section-1-icon-1"></div>
-                        <p className="text-item-section-1"></p>
-                        <p className="hashtag"></p>
+                        <div className="icon wow zoomIn"></div>
+                        <p className="text wow fadeIn">Загружай фото</p>
+                        <p className="text wow fadeIn">с хэштегом</p>
+                        <p className="text hashtag wow fadeIn">#летосLays</p>
                     </div>
-                    <div className="item-section-1"></div>
-                    <div className="item-section-1"></div>
+                    <div className="item-section-2">
+                        <div className="icon wow zoomIn"></div>
+                        <p className="text wow fadeIn">Собирай</p>
+                        <p className="text wow fadeIn">лайки</p>
+                    </div>
+                    <div className="item-section-3">
+                        <div className="icon wow zoomIn"></div>
+                        <p className="text wow fadeIn">Выигрывай</p>
+                        <p className="text wow fadeIn">призы</p>
+                    </div>
                     <div className="text-block-section-1">
                     </div>
                 </div>
-                <div className="content-section-2 wow fadeInLeft">
+                <div className={"content-section-2 wow "+animationSlideLeft}>
                     <div className="content-section-2-1"></div>
                     <div className="content-section-2-2">
                         {images}
                     </div>
                 </div>
                 <div className="content-section-3">
-                    <div className="content-section-3-1 wow fadeInLeft"></div>
-                    <div className="content-section-3-2 wow fadeInRight"></div>
+                    <div className={"content-section-3-1 wow "+animationSlideLeft}></div>
+                    <div className={"content-section-3-2 wow "+animationSlideRight}></div>
                 </div>
                 <div className="content-section-4">
-                    <div className="content-section-4-1 wow fadeInLeft"></div>
-                    <div className="content-section-4-2 wow fadeInRight"></div>
+                    <div className={"content-section-4-1 wow "+animationSlideLeft}></div>
+                    <div className={"content-section-4-2 wow "+animationSlideRight}></div>
                 </div>
                 <div className="footer"></div>
             </div>
