@@ -53,7 +53,16 @@ export default class Content extends React.Component{
                     </div>
                 </div>
                 <div className={"content-section-2 wow "+animationSlideLeft}>
-                    <div className="content-section-2-1"></div>
+                    <div className="content-section-2-1">
+                        <div className="image"></div>
+                        <div className="text">
+                            <p>Загружай</p>
+                            <p>фото</p>
+                            <p>с хэштегом</p>
+                            <p className="hashtag">#летосLays</p>
+                        </div>
+                        <div className="button">галерея</div>
+                    </div>
                     <div className="content-section-2-2">
                         {images}
                     </div>
