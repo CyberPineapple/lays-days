@@ -77,7 +77,7 @@ export default class Content extends React.Component {
     let screenWidth = document.body.clientWidth;
     let animationSlideLeft = "";
     let animationSlideRight = "";
-    if (screenWidth > 640) {
+    if (screenWidth > 680) {
       animationSlideLeft = "slideToRight";
       animationSlideRight = "slideToLeft";
     }
@@ -102,11 +102,11 @@ export default class Content extends React.Component {
             <p className="text wow fadeIn">призы</p>
           </div>
           <div className="text-block">
-            <h1 className="text">ЛЕТО</h1>
-            <p className="text">вкуснее</p>
-            <p className="text">
-              c <span>Lay's</span>
-            </p>
+            <h1 className="first">ЛЕТО</h1>
+            <h1 className="middle">ВКУСНЕЕ</h1>
+            <h1 className="last">
+              С <span>Lay's</span>
+            </h1>
           </div>
         </section>
         <section className={"content-section-2 wow " + animationSlideLeft}>
@@ -141,11 +141,14 @@ export default class Content extends React.Component {
         </section>
         <section className="content-section-4">
           <div className={"content-section-4-1 wow " + animationSlideLeft} />
-          <div className={"content-section-4-2 wow " + animationSlideRight} />
+          <div className={"content-section-4-2 wow " + animationSlideRight}>
+          <p className="title_text">Лето с Lay's</p>
+          <div className="button">перейти</div>
+          </div>
         </section>
         <div className="footer">
           <div className="icon"></div>
-          <p className="text">© 2015 Lay's Russia. Все права защищены.</p>
+          <p className="text">© 2015 Lay's Russia. Все права защищены</p>
           <div className="button__block">
             <a href="https://www.facebook.com/lays.russia" target="blank">
               <div className="button"
