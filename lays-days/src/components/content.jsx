@@ -115,10 +115,10 @@ export default class Content extends React.Component {
             <div className="text">
               <p>Загружай</p>
               <p>фото</p>
-              <p>с хэштегом</p>
+              <p>с хэштегом </p>
               <p className="hashtag">#летосLays</p>
             </div>
-            <div className="button">галерея</div>
+            <div className="button">ГАЛЕРЕЯ</div>
           </div>
           <div className="content-section-2-2">{images}</div>
         </section>
@@ -135,7 +135,7 @@ export default class Content extends React.Component {
             <p className="text">
               вкусное лето и на позитивный желтый цвет
             </p>
-            <div className="button">о проекте</div>
+            <div className="button">О ПРОЕКТЕ</div>
           </div>
           <div className={"content-section-3-2 wow " + animationSlideRight} />
         </section>
@@ -143,7 +143,7 @@ export default class Content extends React.Component {
           <div className={"content-section-4-1 wow " + animationSlideLeft} />
           <div className={"content-section-4-2 wow " + animationSlideRight}>
           <p className="title_text">Лето с Lay's</p>
-          <div className="button">перейти</div>
+          <div className="button">ПЕРЕЙТИ</div>
           </div>
         </section>
         <div className="footer">

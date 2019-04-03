@@ -1,0 +1,77 @@
+.content-section-2 {
+  position: relative;
+  width: 100%;
+  height: 15.55rem;
+}
+
+.content-section-2-1 {
+  width: 15.3rem;
+  height: 100%;
+  background-image: url(../images/gallery_block.d7a874af.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-section-2-2 {
+  box-sizing: border-box;
+  left: 15.3rem;
+  top: 0;
+  position: absolute;
+  background-color: white;
+  width: calc(100% - 15.3rem);
+  height: 100%;
+  padding: 0.7rem 0.55rem 0.7rem 0.6rem;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content-section-2-1 .image {
+  position: absolute;
+  top: 0.9rem;
+  left: 1.35rem;
+  height: 5rem;
+  width: 6rem;
+  background-image: url(../images/photo_vk.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-section-2-1 .text {
+  font-family: GothamPro-Bold;
+  position: absolute;
+  left: 2.1rem;
+  top: 6rem;
+  letter-spacing: -0.025rem;
+  line-height: 1.29rem;
+}
+
+.content-section-2-1 .text .hashtag {
+  font-family: GothamPro-Light;
+  background-color: white;
+  padding: 0 0.18rem 0;
+  margin-left: -0.18rem;
+}
+
+.content-section-2-1 .button {
+  position: absolute;
+  left: 1.92rem;
+  top: 12.02rem;
+  height: 1.55rem;
+  width: 5.4rem;
+  background-color: rgba(143, 12, 0, 0.1);
+  border: 0.075rem solid white;
+  text-align: center;
+  font-family: GothamPro-Medium;
+  font-size: 0.55rem;
+  color: white;
+  letter-spacing: 0.02rem;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+  transition: background 1s;
+}
+
+.content-section-2-1 .button:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+}

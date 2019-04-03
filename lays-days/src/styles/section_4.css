@@ -1,0 +1,75 @@
+.content-section-4 {
+  width: 100%;
+  height: 15.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-section-4:hover .content-section-4-1 {
+  transition-property: transform;
+  transform: scale(1.1);
+}
+
+.content-section-4-1 {
+  position: relative;
+  width: 15.3rem;
+  height: 100%;
+  background-image: url(../images/lays_img.5f4a68cd.jpg);
+  background-size: cover;
+  transition-duration: 10s;
+  background-repeat: no-repeat;
+}
+
+.content-section-4-2:after {
+  content: "";
+  position: absolute;
+  top: 7.2rem;
+  left: -1.2rem;
+  background-image: url(../images/block4-before.png);
+  background-size: cover;
+  width: 1.2rem;
+  height: 2.5rem;
+}
+
+.content-section-4-2 {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 15.3rem;
+  width: calc(100% - 15.3rem);
+  height: 100%;
+  background-image: url(../images/lays_block.1e4024ad.jpg);
+  background-size: cover;
+}
+
+.content-section-4-2 .title_text {
+  position: relative;
+  top: 10.6rem;
+  left: 3.1rem;
+  font-weight: bold;
+  color: black;
+  font-size: 1.5rem;
+  margin-top: -0.1rem;
+}
+
+.content-section-4-2 .button {
+  position: absolute;
+  left: 4.97rem;
+  top: 12.7rem;
+  height: 1.55rem;
+  width: 5.4rem;
+  background-color: rgba(143, 12, 0, 0.1);
+  border: 0.075rem solid white;
+  text-align: center;
+  font-family: GothamPro-Medium;
+  font-size: 0.55rem;
+  color: white;
+  letter-spacing: 0.026rem;
+  box-sizing: border-box;
+  line-height: 1.47rem;
+  transition: background 1s;
+}
+
+.content-section-4-2 .button:hover {
+  background-color: rgba(0, 0, 0, 0.541);
+}

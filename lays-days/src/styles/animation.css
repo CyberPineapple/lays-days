@@ -1,0 +1,52 @@
+.fadeIn {
+  animation: fadeIn;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.animationZoom {
+  transform: scale(0);
+  animation: zoom;
+  animation-fill-mode: forwards;
+}
+
+.slideToLeft {
+  animation: slideToLeft 1s;
+}
+
+.slideToRight {
+  animation: slideToRight 1s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(+20%);
+  }
+  top {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  top {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
