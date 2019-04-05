@@ -2,27 +2,9 @@ import React from "react";
 import menu from "./menu.module.css";
 
 export default class Menu extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      widthScreen: window.innerWidth
-    };
-  }
-
-  componentDidMount(){
-    window.addEventListener("resize", this.update);
-  }
-
-  update = () => {
-    let width = document.documentElement.clientWidth;
-    this.setState({
-      widthScreen: width
-    });
-  };
-
 
   render() {
-    console.log(this.state.widthScreen);
+
     let menuBlock = (
       <div className={menu.button_layout}>
         <div className={menu.button}>
@@ -39,12 +21,21 @@ export default class Menu extends React.Component {
         </div>
       </div>
     );
-    if (this.state.widthScreen <= 680) {
+    let hiddenMenu = "";
+    if (this.props.widthScreen <= 680) {
       menuBlock = null;
+      if (this.props.viewMenu == false){
+        hiddenMenu = " hidden"
+        console.log("visibility");
+      } else {
+        hiddenMenu = " view";
+        console.log("hidden");
+      }
     }
 
+
     return (
-      <div className={menu.navbar}>
+      <div className={menu.navbar + hiddenMenu}>
         <div className={menu.pointer_block}>
           <div className={menu.logo_layout}>
             <div className={menu.logo_icon} />

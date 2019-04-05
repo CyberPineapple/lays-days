@@ -1,11 +1,7 @@
 import React from "react";
-import WOW from "wowjs";
+
 
 export default class Content extends React.Component {
-  componentDidMount() {
-    new WOW.WOW().init();
-
-  }
 
   render() {
     let images = [
@@ -73,18 +69,14 @@ export default class Content extends React.Component {
         }}
       />
     ];
-
-    let screenWidth = document.body.clientWidth;
-    let animationSlideLeft = "";
-    let animationSlideRight = "";
-    if (screenWidth > 680) {
-      animationSlideLeft = "slideToRight";
-      animationSlideRight = "slideToLeft";
+    let contentStyles = "content"
+    if (this.props.viewMenu == false){
+      contentStyles = "content scrollDown"
     }
 
     return (
-      <div className="content">
-        <section className={"content-section-1 wow " + animationSlideRight}>
+      <div className={contentStyles}>
+        <section className={"content-section-1 wow slideToLeft"}>
           <div className="item-section-1">
             <div className="icon wow animationZoom" />
             <p className="text wow fadeIn">Загружай фото</p>
@@ -109,7 +101,7 @@ export default class Content extends React.Component {
             </h1>
           </div>
         </section>
-        <section className={"content-section-2 wow " + animationSlideLeft}>
+        <section className={"content-section-2 wow slideToRight"}>
           <div className="content-section-2-1">
             <div className="image" />
             <div className="text">
@@ -123,7 +115,7 @@ export default class Content extends React.Component {
           <div className="content-section-2-2">{images}</div>
         </section>
         <section className="content-section-3">
-          <div className={"content-section-3-1 wow " + animationSlideLeft}>
+          <div className={"content-section-3-1 wow slideToRight"}>
             <div className="image" />
             <div className="title">
               <p className="title_text">Выиграй призы</p>
@@ -137,11 +129,11 @@ export default class Content extends React.Component {
             </p>
             <div className="button">О ПРОЕКТЕ</div>
           </div>
-          <div className={"content-section-3-2 wow " + animationSlideRight} />
+          <div className={"content-section-3-2 wow slideToLeft"} />
         </section>
         <section className="content-section-4">
-          <div className={"content-section-4-1 wow " + animationSlideLeft} />
-          <div className={"content-section-4-2 wow " + animationSlideRight}>
+          <div className={"content-section-4-1 wow slideToRight"} />
+          <div className={"content-section-4-2 wow slideToLeft"}>
           <p className="title_text">Лето с Lay's</p>
           <div className="button">ПЕРЕЙТИ</div>
           </div>
@@ -183,7 +175,6 @@ export default class Content extends React.Component {
               ></div>
             </a>
           </div>
-
         </div>
       </div>
     );

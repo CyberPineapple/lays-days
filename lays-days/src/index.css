@@ -36,22 +36,18 @@
   padding: 0;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 body {
   font-family: GothamPro;
 }
 
-.app{
-  display: grid;
-  min-height: 100vh;
-  grid-template-areas: 'n c';
-  grid-template-columns: 150px 1fr;
-}
-
-
-
 .content{
   position: relative;
-  grid-area: c;
+  left: 150px;
+  width: calc(100% - 150px);
   background-color: #FFDF01;
 }
 
@@ -59,7 +55,7 @@ body {
 
 .footer{
   position: relative;
-  height: 2.15rem;
+  height: 2.25rem;
   width: 100%;
   background-color: #3C3C3C;
 }
@@ -97,8 +93,8 @@ body {
 }
 
 .footer .button{
-  height: 2.15rem;
-  width: 2.2rem;
+  height: 2.25rem;
+  width: 2.25rem;
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,6 +104,7 @@ body {
 }
 
 .hashtag{
+  font-family: GothamPro-Medium;
   color: #f73934;
 }
 
@@ -399,122 +396,16 @@ html {
 }
 
 @media (max-width:680px) {
-  .app{
-    grid-template-areas:
-    'n'
-    'c';
-    grid-template-columns: 100%;
-    grid-template-rows: 137px 1fr;
-    min-width: 338px;
+  .wow{
+    visibility: visible;
   }
-
   .content{
-    background-color: white;
-  }
-
-  .content-section-1{
-    width: 100%;
-    height: 70.3rem;
-    background-image: url(./images/gallery_1_mobile.eaa754df.jpg);
-    background-size: 100% 100% !important;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .item-section-1{
-    top: 17.7rem;
-    left: 1.5rem;
-    width: 13rem;
-  }
-
-  .item-section-1 .icon{
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
-    background-position: center;
-    margin-bottom: 1rem;
-  }
-
-  .item-section-1 .text{
-    font-size: 1.6rem;
-  }
-
-  .item-section-2{
-    top: 17.7rem;
-    left: 14rem;
-    width: 11rem;
-  }
-
-  .item-section-2 .icon{
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
-    background-position: center;
-    margin-bottom: 1rem;
-  }
-
-  .item-section-2 .text{
-    font-size: 1.6rem;
-  }
-
-  .item-section-3{
-    top: 17.7rem;
-    left: 25.7rem;
-    width: 11rem;
-  }
-
-  .content-section-1 .text-block{
-    top: 4.7rem;
-    left: 12rem;
-    line-height: 3.7rem;
-  }
-
-  .content-section-1 .text-block h1{
-    font-style: Gotham-medium;
-    font-size: 5.5rem;
-    font-weight: 500;
-    letter-spacing: 0.2rem;
-  }
-
-  .content-section-1 .text-block p{
-    font-size: 4rem;
-    font-weight: 500;
-  }
-  .content-section-1 .text-block span{
-    font-size: 5rem;
-    font-weight: 900;
-  }
-
-  .item-section-3 .icon{
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
-    background-position: center;
-    margin-bottom: 1rem;
-  }
-
-  .item-section-3 .text{
-    font-size: 1.6rem;
-  }
-
-  .content-section-2{
-    margin-top: 0.7rem;
-    height: 79.8rem;
-  }
-
-  .content-section-2-1{
-    height: 50%;
-    width: 100%;
-    background-image: url(./images/gallery_block_mobile.231a2475.png);
-    background-size: cover;
-  }
-  .content-section-2-2{
-    padding: 30px;
-    top: 50%;
     left: 0;
-    height: 50%;
+    background-color: white;
     width: 100%;
   }
+
+
 
   .content-section-3{
     height: 79rem;
@@ -529,5 +420,4 @@ html {
   .content-section-3-1:after{
     background-image: none;
   }
-
 }

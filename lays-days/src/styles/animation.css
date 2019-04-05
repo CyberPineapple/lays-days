@@ -17,6 +17,28 @@
   animation: slideToRight 1s;
 }
 
+.hidden{
+  transition: transform 1.5s ease;
+  transform: translateY(-100%);
+}
+
+.view{
+  animation: view 1.5s ease;
+}
+
+.scrollDown{
+  transform: translateY(-136px);
+}
+
+@keyframes view{
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -48,5 +70,24 @@
   top {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 680px){
+  .fadeIn {
+    animation: none;
+    opacity: 1;
+  }
+  .animationZoom {
+    transform: scale(1);
+    animation: none;
+  }
+
+  .slideToLeft {
+    animation: none;
+  }
+
+  .slideToRight {
+    animation: none;
   }
 }

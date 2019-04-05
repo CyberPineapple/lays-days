@@ -1,5 +1,5 @@
 .navbar {
-  grid-area: n;
+  width: 150px;
   background-color: #f6f6f6;
   position: fixed;
   padding-top: 18px;
@@ -89,8 +89,12 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width:680px){
+@media (max-width: 680px){
   .navbar{
-    position: relative;
+    top: 0;
+    height: 136px;
+    width: 100%;
+    position: sticky;
+    display: block;
   }
 }
