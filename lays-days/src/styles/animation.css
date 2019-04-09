@@ -17,20 +17,20 @@
   animation: slideToRight 1s;
 }
 
-.hidden{
+.hidden {
   transition: transform 1.5s ease;
   transform: translateY(-100%);
 }
 
-.view{
+.view {
   animation: view 1.5s ease;
 }
 
-.scrollDown{
-  transform: translateY(-136px);
+.scrollDown {
+  transform: translateY(-0px);
 }
 
-@keyframes view{
+@keyframes view {
   from {
     transform: translateY(-100%);
   }
@@ -73,21 +73,13 @@
   }
 }
 
-@media (max-width: 680px){
+@media (max-width: 680px) {
   .fadeIn {
     animation: none;
     opacity: 1;
   }
   .animationZoom {
     transform: scale(1);
-    animation: none;
-  }
-
-  .slideToLeft {
-    animation: none;
-  }
-
-  .slideToRight {
     animation: none;
   }
 }

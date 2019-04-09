@@ -5,7 +5,7 @@
 }
 
 .content-section-2-1 {
-  width: 15.6rem;
+  width: 49.8%;
   height: 100%;
   background-image: url(../images/gallery_block.d7a874af.jpg);
   background-repeat: no-repeat;
@@ -14,13 +14,13 @@
 
 .content-section-2-2 {
   box-sizing: border-box;
-  left: 15.6rem;
+  left: 49.8%;
   top: 0;
   position: absolute;
   background-color: white;
-  width: calc(100% - 15.6rem);
+  width: 50.2%;
   height: 100%;
-  padding: 0.7rem 0.55rem 0.7rem 0.6rem;
+  padding: 0.65rem;
   display: grid;
   grid-gap: 8px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -29,37 +29,37 @@
 
 .content-section-2-1 .image {
   position: absolute;
-  top: 3.4rem;
-  left: 2.8rem;
-  height: 14.7rem;
-  width: 17rem;
+  top: 1.29rem;
+  left: 1.65rem;
+  height: 4.7rem;
+  width: 5.5rem;
   background-image: url(../images/photo_vk.png);
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .content-section-2-1 .text {
   font-family: GothamPro-Bold;
   position: absolute;
-  left: 2.1rem;
-  top: 6rem;
-  letter-spacing: -0.025rem;
-  line-height: 1.29rem;
+  left: 2.15rem;
+  top: 6.1rem;
+  letter-spacing: -0.015rem;
+  line-height: 1.32rem;
 }
 
 .content-section-2-1 .text .hashtag {
-  font-family: GothamPro-Light;
+  font-family: GothamPro;
   background-color: white;
-  padding: 0 0.18rem 0;
+  padding-left: 0.18rem;
   margin-left: -0.18rem;
 }
 
 .content-section-2-1 .button {
   position: absolute;
-  left: 1.92rem;
-  top: 12.02rem;
-  height: 1.55rem;
-  width: 5.4rem;
+  left: 1.95rem;
+  top: 12.25rem;
+  height: 1.57rem;
+  width: 5.53rem;
   background-color: rgba(143, 12, 0, 0.1);
   border: 0.075rem solid white;
   text-align: center;
@@ -76,23 +76,34 @@
   background-color: rgba(0, 0, 0, 0.541);
 }
 
-@media (max-width: 680px){
-  .content-section-2{
-    margin-top: 0.55rem;
+@media (max-width: 680px) {
+  .content-section-2 {
+    margin-top: 0.73rem;
     height: 79.8rem;
   }
 
-  .content-section-2-1{
-    height: 39.7rem;
+  .content-section-2-1 {
+    position: relative;
+    height: 49.5%;
     width: 100%;
     background-image: url(../images/gallery_block_mobile.231a2475.png);
     background-size: auto;
   }
-  .content-section-2-2{
-    top: 39.79rem;
+
+  .content-section-2-2 {
+    top: 49.5%;
     left: 0;
-    height: calc(100% - 39.7rem);
+    height: 50.5%;
     width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+  }
+
+  .content-section-2-1 .image {
+    top: 3.35rem;
+    left: 2.9rem;
+    height: 14.2rem;
+    width: 16rem;
   }
 
   .content-section-2-1 .text {
@@ -110,7 +121,6 @@
   }
 
   .content-section-2-1 .button {
-    position: absolute;
     left: 22.4rem;
     top: 28.5rem;
     height: 3.95rem;
@@ -125,12 +135,5 @@
     box-sizing: border-box;
     line-height: 3.5rem;
     transition: background 1s;
-  }
-  .content-section-2-2{
-    padding: 1.8rem 1.8rem 2.1rem 1.95rem;
-    top: 39.79rem;
-    left: 0;
-    height: calc(100% - 39.7rem);
-    width: 100%;
   }
 }

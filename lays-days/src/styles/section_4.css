@@ -2,29 +2,38 @@
   width: 100%;
   height: 15.94rem;
   position: relative;
-  overflow: hidden;
 }
 
-.content-section-4:hover .content-section-4-1 {
+.content-section-4:hover .content-section-4-1 .image{
   transition-property: transform;
   transform: scale(1.1);
 }
 
 .content-section-4-1 {
   position: relative;
-  width: 15.3rem;
+  width: 15.6rem;
   height: 100%;
-  background-image: url(../images/lays_img.5f4a68cd.jpg);
-  background-size: cover;
-  transition-duration: 10s;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
+.content-section-4-1 .image{
+  position: absolute;
+  background-image: url(../images/lays_img.5f4a68cd.jpg);
+  background-size: auto;
+  transition-duration: 10s;
+  background-repeat: no-repeat;
+  top: -1%;
+  left: -0%;
+  bottom: -1%;
+  right: -0%;
+  height: auto;
+  width: auto;
+}
 .content-section-4-2:after {
   content: "";
   position: absolute;
-  top: 7.2rem;
-  left: -1.2rem;
+  top: 7.35rem;
+  left: -1.15rem;
   background-image: url(../images/block4-before.png);
   background-size: cover;
   width: 1.2rem;
@@ -35,7 +44,7 @@
   z-index: 1;
   position: absolute;
   top: 0;
-  left: 15.3rem;
+  left: 15.6rem;
   width: calc(100% - 15.3rem);
   height: 100%;
   background-image: url(../images/lays_block.1e4024ad.jpg);
@@ -43,33 +52,94 @@
 }
 
 .content-section-4-2 .title_text {
-  position: relative;
-  top: 10.6rem;
-  left: 3.1rem;
-  font-weight: bold;
+  position: absolute;
+  top: 10.5rem;
+  left: 3.18rem;
+  font-family: GothamPro-Bold;
   color: black;
   font-size: 1.5rem;
-  margin-top: -0.1rem;
+  letter-spacing: -0.009rem;
 }
 
 .content-section-4-2 .button {
   position: absolute;
-  left: 4.97rem;
-  top: 12.7rem;
-  height: 1.55rem;
-  width: 5.4rem;
+  left: 5.12rem;
+  top: 13rem;
+  height: 1.57rem;
+  width: 5.53rem;
   background-color: rgba(143, 12, 0, 0.1);
   border: 0.075rem solid white;
   text-align: center;
   font-family: GothamPro-Medium;
   font-size: 0.55rem;
   color: white;
-  letter-spacing: 0.026rem;
+  letter-spacing: 0.02rem;
   box-sizing: border-box;
-  line-height: 1.47rem;
+  line-height: 1.5rem;
   transition: background 1s;
 }
 
 .content-section-4-2 .button:hover {
   background-color: rgba(0, 0, 0, 0.541);
+}
+
+@media (max-width: 680px) {
+  .content-section-4 {
+    height: 80.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .content-section-4-1 {
+    width: 100%;
+    height: 50.3%;
+    top: 49.7%;
+    overflow: visible;
+  }
+  .content-section-4:hover .content-section-4-1 .image{
+    transform: none;
+  }
+
+  .content-section-4-1 .image {
+    background-image: url(../images/lays_img_mobile.22a44045.jpg);
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: top;
+    top: -5.5%;
+    left: -0%;
+    bottom: -0%;
+    right: -0%;
+  }
+
+  .content-section-4-2 {
+    left: 0;
+    width: 100%;
+    height: 49.7%;
+    background-image: url(../images/lays_block_mobile.823e2bd0\ \(1\).png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .content-section-4-2 .title_text {
+    position: absolute;
+    top: 24.75rem;
+    left: 8.55rem;
+    font-family: GothamPro-Bold;
+    color: black;
+    font-size: 3.8rem;
+    letter-spacing: -0.04rem;
+  }
+
+  .content-section-4-2 .button {
+    left: 13.45rem;
+    top: 30.6rem;
+    height: 3.95rem;
+    width: 13.8rem;
+    border: 0.2rem solid white;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 0.07rem;
+    line-height: 3.5rem;
+  }
 }

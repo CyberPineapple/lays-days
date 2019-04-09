@@ -50,7 +50,7 @@ export default class App extends React.Component {
     return (
       <div className="app">
         <Menu widthScreen={this.state.widthScreen} viewMenu={this.state.viewMenu} />
-        <Content viewMenu={this.state.viewMenu} />
+        <Content viewMenu={this.state.viewMenu} widthScreen={this.state.widthScreen} />
       </div>
     );
   }

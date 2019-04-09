@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.content-section-3:hover .content-section-3-2 {
+.content-section-3:hover .content-section-3-2 .image {
   transition-property: transform;
   transform: scale(1.1);
 }
@@ -22,8 +22,8 @@
 .content-section-3-1:after {
   content: "";
   position: absolute;
-  top: 4.4rem;
-  left: 15.55rem;
+  top: 4.425rem;
+  left: 15.59rem;
   background-image: url(../images/block3-after.png);
   background-size: cover;
   width: 1.1rem;
@@ -31,19 +31,29 @@
 }
 
 .content-section-3-2 {
-  transition-duration: 10s;
   position: absolute;
   top: 0;
   left: 15.6rem;
   width: calc(100% - 15.6rem);
   height: 100%;
-  background-image: url(../images/about_img.3f56954a.jpg);
-  background-size: 110%;
-  background-position: 65% 52%;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.content-section-3-1 .image{
+.content-section-3-2 .image{
+  position: absolute;
+  top: -5%;
+  bottom: -5%;
+  right: -0%;
+  left: -6%;
+  background-image: url(../images/about_img.3f56954a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 10s;
+  height: auto;
+  width: auto;
+}
+
+.content-section-3-1 .image {
   position: relative;
   top: 2.25rem;
   left: 1.05rem;
@@ -54,7 +64,7 @@
   margin-bottom: 3.15rem;
 }
 
-.content-section-3-1 .title{
+.content-section-3-1 .title {
   position: absolute;
   left: 7.1rem;
   top: 3.6rem;
@@ -63,26 +73,20 @@
   font-family: GothamPro-Medium;
 }
 
-
-.content-section-3-1 .title .title_text{
-  font-weight: bold;
-}
-
-.content-section-3-1 .text{
+.content-section-3-1 .text {
   font-size: 0.45rem;
   color: white;
-  margin-bottom: 0.17rem;
-  margin-left: 1.95rem;
-  letter-spacing: -0.006rem;
+  letter-spacing: -0.001rem;
+  line-height: 0.6rem;
 }
 
-.content-section-3-1 .button{
+.content-section-3-1 .button {
   position: absolute;
   left: 1.92rem;
   top: 11.8rem;
   height: 1.55rem;
   width: 5.4rem;
-  background-color: rgba(143,12,0,.1);
+  background-color: rgba(143, 12, 0, 0.1);
   border: 0.075rem solid white;
   text-align: center;
   font-family: GothamPro-Medium;
@@ -94,6 +98,101 @@
   transition: background 1s;
 }
 
+.content-section-3-1 .text_block{
+    position: absolute;
+    left: 2rem;
+}
+
 .content-section-3-1 .button:hover {
   background-color: rgba(0, 0, 0, 0.541);
+}
+
+@media (max-width: 680px) {
+  .content-section-3 {
+    height: 79rem;
+    width: 100%;
+  }
+
+  .content-section-3-1 {
+    width: 100%;
+    height: 50.5%;
+    background-image: url(../images/about_block_mobile.088df3d6.png);
+    background-size: 100% 100%;
+  }
+
+  .content-section-3-2 {
+    top: 50.5%;
+    left: 0;
+    width: 100%;
+    height: 49.5%;
+    overflow: visible;
+  }
+
+  .content-section-3-2 .image{
+    background-image: url(../images/about_img_mobile.7747e5da.jpg);
+    background-size: cover;
+    background-position: top;
+    top: -6.8%;
+    bottom: 0%;
+    right: -0%;
+    left: -0%;
+    width: auto;
+    height: auto;
+    transition: none;
+  }
+  .content-section-3-1:after {
+    background-image: none;
+  }
+
+  .content-section-3-1 .title {
+    position: absolute;
+    left: 4.1rem;
+    top: 4.85rem;
+    color: white;
+    font-size: 3.6rem;
+    font-family: GothamPro-Bold;
+    line-height: 3.85rem;
+    letter-spacing: -0.01rem;
+  }
+
+  .content-section-3-1 .image{
+    display: none;
+  }
+
+  .content-section-3-1 .text_block{
+    left: 4.3rem;
+    top: 15.8rem;
+    width: 17rem;
+  }
+
+  .content-section-3-1 .text{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .content-section-3-1 .text_mobile{
+    position: absolute;
+    left: 4.25rem;
+    top: 15.8rem;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: -0.001rem;
+    line-height: 2rem;
+  }
+
+  .content-section-3-1 .button {
+    left: 13.05rem;
+    top: 30rem;
+    height: 3.95rem;
+    width: 13.8rem;
+    border: 0.2rem solid white;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 0.07rem;
+    line-height: 3.5rem;
+  }
+
+  .content-section-3:hover .content-section-3-2 .image {
+    transform: none;
+  }
 }
