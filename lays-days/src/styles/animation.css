@@ -1,3 +1,5 @@
+@import url(section_1.css);
+
 .fadeIn {
   animation: fadeIn 0.4s;
   animation-fill-mode: forwards;
@@ -28,6 +30,30 @@
 
 .scrollDown {
   transform: translateY(-136px);
+}
+
+.content-section-1_item-1_icon{
+  animation-delay: 0.8s;
+}
+
+.content-section-1_item-2_icon{
+  animation-delay: 1.2s;
+}
+
+.content-section-1_item-3_icon{
+  animation-delay: 1.6s;
+}
+
+.content-section-1_item-1_text{
+  animation-delay: 0.8s;
+}
+
+.content-section-1_item-2_text{
+  animation-delay: 1.2s;
+}
+
+.content-section-1_item-3_text{
+  animation-delay: 1.6s;
 }
 
 @keyframes view {
