@@ -1,11 +1,11 @@
 .fadeIn {
-  animation: fadeIn;
+  animation: fadeIn 0.4s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-.animationZoom {
+.zoom {
   transform: scale(0);
-  animation: zoom;
+  animation: zoom 0.4s;
   animation-fill-mode: forwards;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .scrollDown {
-  transform: translateY(-0px);
+  transform: translateY(-136px);
 }
 
 @keyframes view {

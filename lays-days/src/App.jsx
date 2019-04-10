@@ -1,7 +1,7 @@
 import React from "react";
 import WOW from "wowjs";
-import Menu from "./components/menu/navbar";
-import Content from "./components/content";
+import Header from "./components/header/header.jsx";
+import Content from "./components/content/content";
 
 export default class App extends React.Component {
   constructor() {
@@ -24,7 +24,7 @@ export default class App extends React.Component {
       let scrollNew = window.pageYOffset;
       let scrollOld = this.state.scroll;
       console.log("scrollNew: ", scrollNew, " | scrollOld: ", scrollOld);
-      if (scrollNew > 30 && scrollOld <= scrollNew){
+      if (scrollNew > 30 && scrollOld <= scrollNew) {
         this.setState({
           viewMenu: false,
           scroll: scrollNew
@@ -49,8 +49,14 @@ export default class App extends React.Component {
     console.log("width: ", this.state.widthScreen);
     return (
       <div className="app">
-        <Menu widthScreen={this.state.widthScreen} viewMenu={this.state.viewMenu} />
-        <Content viewMenu={this.state.viewMenu} widthScreen={this.state.widthScreen} />
+        <Header
+          widthScreen={this.state.widthScreen}
+          viewMenu={this.state.viewMenu}
+        />
+        <Content
+          viewMenu={this.state.viewMenu}
+          widthScreen={this.state.widthScreen}
+        />
       </div>
     );
   }

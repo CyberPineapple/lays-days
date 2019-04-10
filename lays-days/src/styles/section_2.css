@@ -4,21 +4,13 @@
   height: 15.9rem;
 }
 
-.content-section-2-1 {
-  width: 49.8%;
-  height: 100%;
-  background-image: url(../images/gallery_block.d7a874af.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.content-section-2-2 {
+.content-section-2_pictures-block {
   box-sizing: border-box;
-  left: 49.8%;
+  left: 15.6rem;
   top: 0;
   position: absolute;
   background-color: white;
-  width: 50.2%;
+  width: calc(100% - 15.6rem);
   height: 100%;
   padding: 0.65rem;
   display: grid;
@@ -27,7 +19,15 @@
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.content-section-2-1 .image {
+.content-section-2_description-block {
+  width: 15.6rem;
+  height: 100%;
+  background-image: url(../images/gallery_block.d7a874af.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-section-2_description-block_image {
   position: absolute;
   top: 1.29rem;
   left: 1.65rem;
@@ -38,7 +38,7 @@
   background-repeat: no-repeat;
 }
 
-.content-section-2-1 .text {
+.content-section-2_description-block_title {
   font-family: GothamPro-Bold;
   position: absolute;
   left: 2.15rem;
@@ -47,14 +47,20 @@
   line-height: 1.32rem;
 }
 
-.content-section-2-1 .text .hashtag {
+.content-section-2_description-block_title_text{
+  font-size: 1rem;
+}
+
+.content-section-2_description-block_title_text_hashtag {
   font-family: GothamPro;
   background-color: white;
   padding-left: 0.18rem;
   margin-left: -0.18rem;
+  color: #f73934;
+  font-size: 1rem;
 }
 
-.content-section-2-1 .button {
+.content-section-2_description-block_button {
   position: absolute;
   left: 1.95rem;
   top: 12.25rem;
@@ -72,7 +78,7 @@
   transition: background 1s;
 }
 
-.content-section-2-1 .button:hover {
+.content-section-2_description-block_button:hover {
   background-color: rgba(0, 0, 0, 0.541);
 }
 
@@ -82,15 +88,15 @@
     height: 79.8rem;
   }
 
-  .content-section-2-1 {
+  .content-section-2_description-block {
     position: relative;
     height: 49.5%;
     width: 100%;
     background-image: url(../images/gallery_block_mobile.231a2475.png);
-    background-size: auto;
+    background-size: cover;
   }
 
-  .content-section-2-2 {
+  .content-section-2_pictures-block {
     top: 49.5%;
     left: 0;
     height: 50.5%;
@@ -99,14 +105,14 @@
     padding: 2rem;
   }
 
-  .content-section-2-1 .image {
+  .content-section-2_description-block_image {
     top: 3.35rem;
     left: 2.9rem;
     height: 14.2rem;
     width: 16rem;
   }
 
-  .content-section-2-1 .text {
+  .content-section-2_description-block_title {
     font-size: 2.7rem;
     left: 4.4rem;
     top: 18.45rem;
@@ -114,13 +120,18 @@
     line-height: 3.45rem;
   }
 
-  .content-section-2-1 .text .hashtag {
-    font-family: GothamPro;
-    padding: 0 0.6rem 0 0.6rem;
-    margin-left: -0.6rem;
+  .content-section-2_description-block_title_text{
+    font-size: 2.7rem;
   }
 
-  .content-section-2-1 .button {
+  .content-section-2_description-block_title_text_hashtag {
+    font-family: GothamPro;
+    padding: 0 1.2rem 0 0.6rem;
+    margin-left: -0.6rem;
+    font-size: 2.7rem;
+  }
+
+  .content-section-2_description-block_button {
     left: 22.4rem;
     top: 28.5rem;
     height: 3.95rem;

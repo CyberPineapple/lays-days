@@ -8,7 +8,7 @@
   background-size: cover;
 }
 
-.item-section-1 {
+.content-section-1_item-1 {
   position: absolute;
   left: 2rem;
   width: 3.2rem;
@@ -17,7 +17,7 @@
   animation-duration: 1s;
 }
 
-.item-section-1 .icon {
+.content-section-1_item-1_icon {
   margin: auto;
   height: 2.75rem;
   width: 2.75rem;
@@ -25,30 +25,28 @@
   background-color: white;
   background-image: url(../images/photo.png);
   background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: 91%;
+  background-position: center;
+  background-size: 90%;
   margin-bottom: 0.4rem;
   animation-delay: 0.8s;
-  animation-duration: 1s;
 }
 
-.item-section-1 .text {
+.content-section-1_item-1_text {
   margin-bottom: 0.05rem;
   font-size: 0.4rem;
   text-align: center;
   animation-delay: 0.8s;
-  animation-duration: 1s;
   line-height: 0.5rem;
 }
 
-.item-section-2 {
+.content-section-1_item-2 {
   position: absolute;
   left: 6.1rem;
   width: 3.2rem;
   top: 1.7rem;
 }
 
-.item-section-2 .icon {
+.content-section-1_item-2_icon {
   margin: auto;
   height: 2.75rem;
   width: 2.75rem;
@@ -56,30 +54,33 @@
   background-color: white;
   background-image: url(../images/heart.png);
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   background-size: 90%;
   margin-bottom: 0.45rem;
   animation-delay: 1.2s;
-  animation-duration: 1s;
 }
 
-.item-section-2 .text {
+.content-section-1_item-2_text {
   line-height: 0.5rem;
   margin-bottom: 0.05rem;
   font-size: 0.4rem;
   text-align: center;
   animation-delay: 1.2s;
-  animation-duration: 1s;
 }
 
-.item-section-3 {
+.hashtag {
+  font-family: GothamPro-Medium;
+  color: #f73934;
+}
+
+.content-section-1_item-3 {
   position: absolute;
   left: 10.3rem;
   width: 3.2rem;
   top: 1.7rem;
 }
 
-.item-section-3 .icon {
+.content-section-1_item-3_icon {
   margin: auto;
   height: 2.75rem;
   width: 2.75rem;
@@ -87,75 +88,70 @@
   background-color: white;
   background-image: url(../images/box.png);
   background-repeat: no-repeat;
-  background-position: 60% 20%;
-  background-size: 2.4rem;
+  background-position: center;
+  background-size: 90%;
   margin-bottom: 0.35rem;
   animation-delay: 1.6s;
-  animation-duration: 1s;
 }
 
-.item-section-3 .text {
+.content-section-1_item-3_text {
   line-height: 0.5rem;
   margin-bottom: 0.05rem;
   font-size: 0.4rem;
   text-align: center;
   animation-delay: 1.6s;
-  animation-duration: 1s;
 }
 
-.content-section-1 .first {
+.content-section-1_title {
   position: absolute;
-  left: 1.8rem;
-  bottom: 4.65rem;
+  left: 1.75rem;
+  top: 7.56rem;
+}
+
+.content-section-1_title_first-string {
   color: #f73934;
-  font-family: GothamPro-Medium;
-  font-size: 2.1rem;
-  letter-spacing: 0.17rem;
+  font-family: GothamPro;
+  font-size: 2.15rem;
+  letter-spacing: 0.145rem;
 }
 
-.content-section-1 .middle {
-  position: absolute;
-  left: 1.74rem;
-  bottom: 3.58rem;
+.content-section-1_title_middle-string {
   color: #f73934;
   font-family: GothamPro-Light;
-  font-size: 1.16rem;
+  font-size: 1.17rem;
   letter-spacing: 0.12rem;
+  line-height: 0.9rem;
 }
 
-.content-section-1 .last {
-  position: absolute;
-  left: 1.7rem;
-  bottom: 1.8rem;
+.content-section-1_title_last-string {
   color: #f73934;
   font-family: GothamPro-Light;
   font-size: 1.2rem;
   word-spacing: 0.2rem;
+  line-height: 1.75rem;
 }
 
-.content-section-1 .last span {
+.content-section-1_title_last-string span {
   font-family: GothamPro-Black;
-  font-size: 1.95rem;
+  font-size: 1.96rem;
   letter-spacing: 0.001rem;
 }
 
-@media (max-width: 680px){
-  .content-section-1{
+@media (max-width: 680px) {
+  .content-section-1 {
     width: 100%;
     height: 69rem;
     background-image: url(../images/gallery_1_mobile.eaa754df.jpg);
-    background-size: auto;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .item-section-1{
-    top: 18.2rem;
+  .content-section-1_item-1 {
+    top: 290px;
     left: 1.5rem;
     width: 13rem;
   }
 
-  .item-section-1 .icon{
+  .content-section-1_item-1_icon {
     height: 8.1rem;
     width: 8.1rem;
     background-size: 84%;
@@ -163,19 +159,18 @@
     margin-bottom: 1rem;
   }
 
-  .item-section-1 .text{
+  .content-section-1_item-1_text {
     font-size: 1.6rem;
     line-height: 1.8rem;
   }
 
-  .item-section-2{
-    position: relative;
-    top: 18.2rem;
-    left: 14rem;
-    width: 11rem;
+  .content-section-1_item-2 {
+    top: 290px;
+    left: 13rem;
+    width: 13rem;
   }
 
-  .item-section-2 .icon{
+  .content-section-1_item-2_icon {
     height: 8.1rem;
     width: 8.1rem;
     background-size: 84%;
@@ -183,57 +178,59 @@
     margin-bottom: 1rem;
   }
 
-  .item-section-2 .text{
+  .content-section-1_item-2_text {
     font-size: 1.6rem;
     line-height: 1.8rem;
   }
 
-  .item-section-3{
-    top: 18.2rem;
-    left: 25.7rem;
-    width: 11rem;
+  .content-section-1_item-3 {
+    top: 290px;
+    left: 24.8rem;
+    width: 13rem;
   }
 
-  .content-section-1 .text-block .first {
-    top: 2.5rem;
-    left: 12.1rem;
+  .content-section-1_item-3_icon {
+    height: 8.1rem;
+    width: 8.1rem;
+    background-size: 84%;
+    background-position: center;
+    margin-bottom: 1rem;
+  }
+
+  .content-section-1_item-3_text {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+
+  .content-section-1_title {
+    top: 39px;
+    left: 50%;
+    margin-left: -127px;
+  }
+
+  .content-section-1_title_first-string {
     font-family: GothamPro;
-    font-size: 5.4rem;
-    letter-spacing: 0.3rem;
+    font-size: 85px;
+    letter-spacing: 6px;
   }
 
-  .content-section-1 .text-block .middle {
-    top: 7.9rem;
-    left: 12rem;
+  .content-section-1_title_middle-string {
     font-family: GothamPro-Light;
-    font-size: 3rem;
-    letter-spacing: 0.25rem;
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 35px;
   }
 
-  .content-section-1 .text-block .last {
-    top: 10rem;
-    left: 12rem;
+  .content-section-1_title_last-string {
     font-family: GothamPro-Light;
-    font-size: 3rem;
-    word-spacing: 0.5rem;
+    font-size: 50px;
+    word-spacing: 5px;
+    line-height: 70px;
   }
 
-  .content-section-1 .text-block span {
+  .content-section-1_title_last-string span {
     font-family: GothamPro-Black;
-    font-size: 4.7rem;
-    letter-spacing: 0.1rem;
-  }
-
-  .item-section-3 .icon{
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
-    background-position: center;
-    margin-bottom: 1rem;
-  }
-
-  .item-section-3 .text{
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 78px;
+    letter-spacing: 0;
   }
 }
