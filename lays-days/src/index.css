@@ -342,9 +342,11 @@ html {
 }
 
 @media (max-width: 680px) {
+
   .content {
     left: 0;
     background-color: white;
     width: 100%;
+    top: 0;
   }
 }

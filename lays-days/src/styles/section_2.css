@@ -6,11 +6,11 @@
 
 .content-section-2_pictures-block {
   box-sizing: border-box;
-  left: 15.6rem;
+  left: 50%;
   top: 0;
   position: absolute;
   background-color: white;
-  width: calc(100% - 15.6rem);
+  width: 50%;
   height: 100%;
   padding: 0.65rem;
   display: grid;
@@ -20,7 +20,7 @@
 }
 
 .content-section-2_description-block {
-  width: 15.6rem;
+  width: 50%;
   height: 100%;
   background-image: url(../images/gallery_block.d7a874af.jpg);
   background-repeat: no-repeat;
@@ -61,6 +61,9 @@
 }
 
 .content-section-2_description-block_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 1.95rem;
   top: 12.25rem;
@@ -68,13 +71,11 @@
   width: 5.53rem;
   background-color: rgba(143, 12, 0, 0.1);
   border: 0.075rem solid white;
-  text-align: center;
-  font-family: GothamPro-Medium;
+  font-family: GothamPro;
   font-size: 0.55rem;
   color: white;
   letter-spacing: 0.02rem;
   box-sizing: border-box;
-  line-height: 1.5rem;
   transition: background 1s;
 }
 
@@ -138,13 +139,9 @@
     width: 13.8rem;
     background-color: rgba(143, 12, 0, 0.1);
     border: 0.2rem solid white;
-    text-align: center;
-    font-family: GothamPro-Medium;
     font-size: 1.4rem;
     color: white;
     letter-spacing: 0.07rem;
-    box-sizing: border-box;
-    line-height: 3.5rem;
     transition: background 1s;
   }
 }

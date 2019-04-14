@@ -53,7 +53,7 @@
 }
 
 .button_text {
-  font-family: GothamPro-Medium;
+  font-family: GothamPro;
   width: 100%;
   text-align: center;
   color: #555;
@@ -90,7 +90,7 @@
     top: 0;
     height: 136px;
     width: 100%;
-    position: sticky;
+    position: fixed;
     display: block;
     border-bottom: 1px solid rgba(155,155,155, 0.18);
   }

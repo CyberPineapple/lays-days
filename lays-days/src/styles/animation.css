@@ -19,18 +19,15 @@
   animation: slideToRight 1s;
 }
 
-.hidden {
-  transition: transform 1.5s ease;
-  transform: translateY(-100%);
+.hide {
+  animation: hide 0.4s ease;
+  animation-fill-mode: forwards;
 }
 
-.view {
-  animation: view 1.5s ease;
+.show {
+  animation: show 0.4s ease;
 }
 
-.scrollDown {
-  transform: translateY(-136px);
-}
 
 .content-section-1_item-1_icon{
   animation-delay: 0.8s;
@@ -56,7 +53,16 @@
   animation-delay: 1.6s;
 }
 
-@keyframes view {
+@keyframes hide{
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes show {
   from {
     transform: translateY(-100%);
   }
@@ -100,12 +106,12 @@
 }
 
 @media (max-width: 680px) {
-  .fadeIn {
-    animation: none;
-    opacity: 1;
+
+  .slideToLeft {
+    animation: slideToLeft 0.4s;
   }
-  .animationZoom {
-    transform: scale(1);
-    animation: none;
+
+  .slideToRight {
+    animation: slideToRight 0.4s;
   }
 }

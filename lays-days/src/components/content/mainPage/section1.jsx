@@ -4,11 +4,6 @@ const Section_1 = (props) => {
   let slideToLeft = " wow slideToLeft";
   let zoom = " wow zoom";
   let fadeIn = " wow fadeIn";
-  if (props.widthScreen <= 680) {
-    zoom = "";
-    fadeIn = "";
-    slideToLeft = "";
-  }
 
   return(
     <section className={"content-section-1" + slideToLeft}>

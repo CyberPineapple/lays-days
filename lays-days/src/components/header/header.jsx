@@ -5,7 +5,9 @@ export default class Menu extends React.Component {
   constructor() {
     super();
     this.state = {
-      menuMobileView: false
+      openMenu: false,
+      scroll: 0,
+      viewMenu: true
     };
   }
 
@@ -26,19 +28,21 @@ export default class Menu extends React.Component {
         </div>
       </div>
     );
-    let hiddenMenu = "";
+    let statusMenu = "";
     let openMenu = "";
     if (this.props.widthScreen <= 680) {
-      if (this.props.viewMenu === false) {
-        hiddenMenu = " hidden";
+      if (this.state.viewMenu === false) {
+        statusMenu = " hide";
         console.log("hidden");
-        if (this.state.menuMobileView === true) {
+        if (this.state.openMenu === true) {
           this.openMobileMenu();
         }
       } else {
-        hiddenMenu = " view";
-        console.log("visibility");
-        if (this.state.menuMobileView === true) {
+        if (this.state.scroll > 0){
+          statusMenu = " show";
+          console.log("visibility");
+        }
+        if (this.state.openMenu === true) {
           openMenu = " " + header.opened;
         }
         menuBlock = (
@@ -79,7 +83,7 @@ export default class Menu extends React.Component {
     }
 
     return (
-      <div className={header.navbar + hiddenMenu}>
+      <div className={header.navbar + statusMenu}>
         <div className={header.pointer_block}>
           <div className={header.logo_layout}>
             <div className={header.logo_icon} />
@@ -91,9 +95,32 @@ export default class Menu extends React.Component {
     );
   }
 
+  componentDidMount() {
+    window.addEventListener("scroll", this.scroll);
+  }
+
+  scroll = () => {
+    if (this.props.widthScreen <= 680) {
+      let scrollNew = window.pageYOffset;
+      let scrollOld = this.state.scroll;
+      console.log("scrollNew: ", scrollNew, " | scrollOld: ", scrollOld);
+      if (scrollOld <= scrollNew) {
+        this.setState({
+          viewMenu: false,
+          scroll: scrollNew
+        });
+      } else {
+        this.setState({
+          viewMenu: true,
+          scroll: scrollNew
+        });
+      }
+    }
+  };
+
   openMobileMenu = () => {
     this.setState({
-      menuMobileView: !this.state.menuMobileView
+      openMenu: !this.state.openMenu
     });
   };
 }

@@ -12,7 +12,7 @@
 
 .content-section-3_description-block {
   position: relative;
-  width: 15.6rem;
+  width: 50%;
   height: 100%;
   background-image: url(../images/about_block.dbb14942.png);
   background-size: cover;
@@ -22,19 +22,19 @@
 .content-section-3_description-block:after {
   content: "";
   position: absolute;
-  top: 4.425rem;
-  left: 15.59rem;
+  top: 4.35rem;
+  left: 99%;
   background-image: url(../images/block3-after.png);
   background-size: cover;
-  width: 1.1rem;
+  width: 7.5%;
   height: 2.5rem;
 }
 
 .content-section-3_image-block {
   position: absolute;
   top: 0;
-  left: 15.6rem;
-  width: calc(100% - 15.6rem);
+  left: 50%;
+  width: 50%;
   height: 100%;
   overflow: hidden;
 }
@@ -84,6 +84,9 @@
 }
 
 .content-section-3_description-block_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: 1.95rem;
   top: 12.05rem;
@@ -91,13 +94,11 @@
   width: 5.53rem;
   background-color: rgba(143, 12, 0, 0.1);
   border: 0.075rem solid white;
-  text-align: center;
-  font-family: GothamPro-Medium;
+  font-family: GothamPro;
   font-size: 0.55rem;
   color: white;
   letter-spacing: 0.04rem;
   box-sizing: border-box;
-  line-height: 1.5rem;
   transition: background 1s;
 }
 
@@ -170,15 +171,13 @@
   }
 
   .content-section-3_description-block_button {
-    left: 13.05rem;
+    left: calc(50% - 6.9rem);
     top: 30rem;
     height: 3.95rem;
     width: 13.8rem;
     border: 0.2rem solid white;
     font-size: 1.4rem;
-    color: white;
     letter-spacing: 0.07rem;
-    line-height: 3.5rem;
   }
 
   .content-section-3:hover .content-section-3_image-block_image {
