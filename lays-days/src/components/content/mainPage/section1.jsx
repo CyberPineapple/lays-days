@@ -1,17 +1,23 @@
-import React from 'react';
+import React from "react";
 
-const Section_1 = (props) => {
+const Section_1 = props => {
   let slideToLeft = " wow slideToLeft";
   let zoom = " wow zoom";
   let fadeIn = " wow fadeIn";
-
-  return(
+  if (props.widthScreen <= 680) {
+    slideToLeft = "";
+  }
+  return (
     <section className={"content-section-1" + slideToLeft}>
       <div className="content-section-1_item-1">
         <div className={"content-section-1_item-1_icon" + zoom} />
-        <p className={"content-section-1_item-1_text" + fadeIn}>Загружай фото</p>
+        <p className={"content-section-1_item-1_text" + fadeIn}>
+          Загружай фото
+        </p>
         <p className={"content-section-1_item-1_text" + fadeIn}>с хэштегом</p>
-        <p className={"content-section-1_item-1_text hashtag" + fadeIn}>#летосLays</p>
+        <p className={"content-section-1_item-1_text hashtag" + fadeIn}>
+          #летосLays
+        </p>
       </div>
       <div className="content-section-1_item-2">
         <div className={"content-section-1_item-2_icon" + zoom} />
@@ -32,6 +38,6 @@ const Section_1 = (props) => {
       </div>
     </section>
   );
-}
+};
 
 export default Section_1;
