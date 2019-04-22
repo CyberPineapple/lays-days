@@ -81,6 +81,7 @@
   letter-spacing: 0.02rem;
   box-sizing: border-box;
   transition: background 1s;
+  cursor: pointer;
 }
 
 .content-section-4_description-block_button:hover {

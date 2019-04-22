@@ -100,6 +100,7 @@
   letter-spacing: 0.04rem;
   box-sizing: border-box;
   transition: background 1s;
+  cursor: pointer;
 }
 
 

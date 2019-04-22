@@ -13,7 +13,7 @@ export default class Menu extends React.Component {
 
   render() {
     let menuBlock = (
-      <div className={header.button_layout}>
+      <div className={header.button_block}>
         <div className={header.button}>
           <div className={header.button_icon_1} />
           <p className={header.button_text}>Галерея</p>
@@ -54,7 +54,7 @@ export default class Menu extends React.Component {
               <div className={header.line1} />
               <div className={header.line2} />
               <div className={header.line3} />
-              <div className={header.button_layout}>
+              <div className={header.button_block}>
                 <div className={header.button + " slideToRight"}>
                   <div className={header.button_icon_1} />
                   <p className={header.button_text}>Галерея</p>
