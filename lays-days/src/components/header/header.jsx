@@ -12,6 +12,7 @@ export default class Menu extends React.Component {
   }
 
   render() {
+    console.log('init scroll', this.state.scroll);
     let menuBlock = (
       <div className={header.button_block}>
         <div className={header.button}>
@@ -31,15 +32,16 @@ export default class Menu extends React.Component {
     let statusMenu = "";
     let openMenu = "";
     if (this.props.widthScreen <= 680){
-      if (this.state.viewMenu === false) {
+      if (this.state.viewMenu === true && this.state.scroll > 0) {
+        statusMenu = " show";
+        console.log("visibility");
+
+      } else if (this.state.viewMenu === false){
         statusMenu = " hide";
         console.log("hidden");
         if (this.state.openMenu === true) {
             this.openMobileMenu();
           }
-      } else if (this.state.viewMenu === true && this.state.scroll > 0){
-        statusMenu = " show";
-        console.log("visibility");
       }
 
       if ( this.state.openMenu === false){
@@ -70,7 +72,7 @@ export default class Menu extends React.Component {
                   <div className={header.button_icon_3} />
                   <p className={header.button_text}>Лето с Lay's</p>
                 </div>
-                <div className={header.button + ' ' + header.slideRight}>
+                <div className={header.button_close_menu + ' ' + header.slideRight}>
                   <p
                     className={header.button_close_menu_text}
                     onClick={() => this.openMobileMenu()}

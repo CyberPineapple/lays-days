@@ -138,91 +138,98 @@
   }
 
   .content-section-1_item-1 {
-    top: 445px;
-    left: 1.5rem;
-    width: 13rem;
+    top: 235px;
+    left: 6%;
+    width: 33.3%;
   }
 
   .content-section-1_item-1_icon {
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
+    height: 64px;
+    width: 64px;
+    background-size: cover;
     background-position: center;
-    margin-bottom: 1rem;
+    margin-bottom: 11px;
   }
 
   .content-section-1_item-1_text {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: -.1px;
   }
 
   .content-section-1_item-2 {
-    top: 445px;
-    left: 13rem;
-    width: 13rem;
+    top: 235px;
+    left: 33.3%;;
+    width: 33.3%;
   }
 
   .content-section-1_item-2_icon {
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
+    height: 64px;
+    width: 64px;
+    background-size: cover;
     background-position: center;
-    margin-bottom: 1rem;
+    margin-bottom: 11px;
   }
 
   .content-section-1_item-2_text {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: -.1px;
   }
 
   .content-section-1_item-3 {
-    top: 445px;
-    left: 24.8rem;
-    width: 13rem;
+    top: 235px;
+    left: 60.6%;
+    width: 33.3%;
   }
 
   .content-section-1_item-3_icon {
-    height: 8.1rem;
-    width: 8.1rem;
-    background-size: 84%;
+    height: 64px;
+    width: 64px;
+    background-size: cover;
     background-position: center;
-    margin-bottom: 1rem;
+    margin-bottom: 11px;
   }
 
   .content-section-1_item-3_text {
-    font-size: 1.6rem;
-    line-height: 1.8rem;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: -.1px;
   }
 
   .content-section-1_title {
-    top: 195px;
+    top: 100px;
     left: 50%;
-    margin-left: -127px;
+    margin-left: -62px;
+    width: 136px;
   }
 
   .content-section-1_title_first-string {
     font-family: GothamPro;
-    font-size: 85px;
-    letter-spacing: 6px;
+    margin-left: 0;
+    font-size: 44px;
+    letter-spacing: 1px;
+    color: #d62b2b;
   }
 
   .content-section-1_title_middle-string {
     font-family: GothamPro-Light;
-    font-size: 50px;
-    letter-spacing: 2px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 24px;
+    color: #d62b2b;
+    letter-spacing: 1px;
   }
 
   .content-section-1_title_last-string {
+    color: #d62b2b;
     font-family: GothamPro-Light;
-    font-size: 50px;
-    word-spacing: 5px;
-    line-height: 70px;
+    line-height: 29px;
+    font-size: 25px;
   }
 
   .content-section-1_title_last-string span {
     font-family: GothamPro-Black;
-    font-size: 78px;
+    font-size: 37px;
     letter-spacing: 0;
   }
 }

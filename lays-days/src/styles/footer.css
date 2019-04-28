@@ -71,21 +71,23 @@
 
   @media (max-width: 680px) {
     .footer {
-      height: 83px;
+      height: 42px;
       bottom: 0;
     }
 
     .footer_text {
-      font-size: 17px;
-      letter-spacing: 0.1px;
-      left: 60px;
-      top: 28px;
+      top: 0;
+      left: 0;
       color: #b4b4b4;
       font-weight: normal;
+      margin-left: 29px;
+      font-size: 9px;
+      line-height: 42px;
+      letter-spacing: -.3px;
     }
 
     .footer_button-block_button {
-      height: 83px;
-      width: 89.5px;
+      height: 42px;
+      width: 45px;
     }
 }
