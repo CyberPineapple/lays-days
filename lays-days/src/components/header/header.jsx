@@ -30,25 +30,24 @@ export default class Menu extends React.Component {
     );
     let statusMenu = "";
     let openMenu = "";
-    if (this.props.widthScreen <= 680) {
+    if (this.props.widthScreen <= 680){
       if (this.state.viewMenu === false) {
         statusMenu = " hide";
         console.log("hidden");
         if (this.state.openMenu === true) {
-          this.openMobileMenu();
-        }
-      } else {
-        if (this.state.scroll > 0){
-          statusMenu = " show";
-          console.log("visibility");
-        }
-        if (this.state.openMenu === true) {
-          openMenu = " " + header.open;
-        } else {
-          openMenu = " " + header.close;
-        }
-
+            this.openMobileMenu();
+          }
+      } else if (this.state.viewMenu === true && this.state.scroll > 0){
+        statusMenu = " show";
+        console.log("visibility");
       }
+
+      if ( this.state.openMenu === false){
+        openMenu = " " + header.close;
+      } else if (this.state.openMenu === true){
+        openMenu = " " + header.open;
+      }
+
         menuBlock = (
           <Fragment>
             <div
@@ -84,7 +83,6 @@ export default class Menu extends React.Component {
           </Fragment>
         );
     }
-
     return (
       <div className={header.navbar + statusMenu}>
         <div className={header.pointer_block}>
