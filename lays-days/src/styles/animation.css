@@ -20,12 +20,12 @@
 }
 
 .hide {
-  animation: hide 0.4s ease;
+  animation: hide 0.5s ease;
   animation-fill-mode: forwards;
 }
 
 .show {
-  animation: show 0.4s ease;
+  animation: show 0.5s ease;
 }
 
 
@@ -52,6 +52,7 @@
 .content-section-1_item-3_text{
   animation-delay: 1.6s;
 }
+
 
 @keyframes hide{
   from{

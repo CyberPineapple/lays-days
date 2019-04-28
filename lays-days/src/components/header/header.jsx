@@ -43,8 +43,12 @@ export default class Menu extends React.Component {
           console.log("visibility");
         }
         if (this.state.openMenu === true) {
-          openMenu = " " + header.opened;
+          openMenu = " " + header.open;
+        } else {
+          openMenu = " " + header.close;
         }
+
+      }
         menuBlock = (
           <Fragment>
             <div
@@ -55,19 +59,19 @@ export default class Menu extends React.Component {
               <div className={header.line2} />
               <div className={header.line3} />
               <div className={header.button_block}>
-                <div className={header.button + " slideToRight"}>
+                <div className={header.button + ' ' + header.slideLeft}>
                   <div className={header.button_icon_1} />
                   <p className={header.button_text}>Галерея</p>
                 </div>
-                <div className={header.button + " slideToLeft"}>
+                <div className={header.button + ' ' + header.slideRight}>
                   <div className={header.button_icon_2} />
                   <p className={header.button_text}>О проекте</p>
                 </div>
-                <div className={header.button + " slideToRight"}>
+                <div className={header.button + ' ' + header.slideLeft}>
                   <div className={header.button_icon_3} />
                   <p className={header.button_text}>Лето с Lay's</p>
                 </div>
-                <div className={header.button_close_menu + " slideToLeft"}>
+                <div className={header.button + ' ' + header.slideRight}>
                   <p
                     className={header.button_close_menu_text}
                     onClick={() => this.openMobileMenu()}
@@ -79,7 +83,6 @@ export default class Menu extends React.Component {
             </div>
           </Fragment>
         );
-      }
     }
 
     return (

@@ -39,6 +39,10 @@
   display: none;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 body {
   font-family: GothamPro;
 }
