@@ -16,6 +16,10 @@ export default class App extends React.Component {
     window.addEventListener("resize", this.update);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.update);
+  }
+
 
 
   update = () => {
@@ -26,7 +30,6 @@ export default class App extends React.Component {
   };
 
   render() {
-    console.log("width: ", this.state.widthScreen);
     return (
       <div className="app">
         <Header

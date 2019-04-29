@@ -5,14 +5,13 @@ export default class Menu extends React.Component {
   constructor() {
     super();
     this.state = {
-      openMenu: false,
+      openMenu: 0,
       scroll: 0,
-      viewMenu: true
+      viewMenu: true,
     };
   }
 
   render() {
-    console.log('init scroll', this.state.scroll);
     let menuBlock = (
       <div className={header.button_block}>
         <div className={header.button}>
@@ -32,16 +31,13 @@ export default class Menu extends React.Component {
     let statusMenu = "";
     let openMenu = "";
     if (this.props.widthScreen <= 680){
-      if (this.state.viewMenu === true && this.state.scroll > 0) {
-        statusMenu = " show";
-        console.log("visibility");
-
-      } else if (this.state.viewMenu === false){
+      if (this.state.viewMenu === false) {
         statusMenu = " hide";
-        console.log("hidden");
         if (this.state.openMenu === true) {
             this.openMobileMenu();
           }
+      } else if (this.state.viewMenu === true && this.state.scroll !== 0){
+        statusMenu = " show";
       }
 
       if ( this.state.openMenu === false){
@@ -102,12 +98,15 @@ export default class Menu extends React.Component {
     window.addEventListener("scroll", this.scroll);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.scroll);
+  }
+
   scroll = () => {
     if (this.props.widthScreen <= 680) {
       let scrollNew = window.pageYOffset;
       let scrollOld = this.state.scroll;
-      console.log("scrollNew: ", scrollNew, " | scrollOld: ", scrollOld);
-      if (scrollOld <= scrollNew) {
+      if (scrollOld <= scrollNew && scrollOld !== 0) {
         this.setState({
           viewMenu: false,
           scroll: scrollNew
