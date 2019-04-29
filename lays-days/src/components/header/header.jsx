@@ -12,6 +12,8 @@ export default class Menu extends React.Component {
   }
 
   render() {
+
+    // инициализация блока с кнопками
     let menuBlock = (
       <div className={header.button_block}>
         <div className={header.button}>
@@ -28,24 +30,34 @@ export default class Menu extends React.Component {
         </div>
       </div>
     );
+
+
+    // нициализация состояний меню
     let statusMenu = "";
     let openMenu = "";
+
+
     if (this.props.widthScreen <= 680){
       if (this.state.viewMenu === false) {
         statusMenu = " hide";
+        // прячем меню
         if (this.state.openMenu === true) {
             this.openMobileMenu();
+            // закрываем меню при скрытии меню
           }
       } else if (this.state.viewMenu === true && this.state.scroll !== 0){
         statusMenu = " show";
+        // показываем меню
       }
 
+      // открытие и закрытие меню
       if ( this.state.openMenu === false){
         openMenu = " " + header.close;
       } else if (this.state.openMenu === true){
         openMenu = " " + header.open;
       }
 
+        // перестраиваем блок с кнопками под мобильную версию
         menuBlock = (
           <Fragment>
             <div
