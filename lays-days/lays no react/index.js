@@ -14,7 +14,7 @@ window.addEventListener("resize", () => handleWidthScreen());
 window.addEventListener("load", () => handleWindowLoad());
 window.addEventListener("scroll", () => handleWindowScroll());
 menuButton.addEventListener("click", () => handleMenu());
-buttonCloseMenu.addEventListener('click', () => closeMenu());
+buttonCloseMenu.addEventListener("click", () => closeMenu());
 
 handleWidthScreen = () => {
   widthScreen = document.body.clientWidth;
@@ -31,12 +31,12 @@ handleWindowLoad = () => {
 handleWindowScroll = () => {
   let scrollNew = window.pageYOffset + document.documentElement.clientHeight;
   if (scrollNew > section3.offsetTop) {
-    section3.children[0].classList.add("slideToRight");
-    section3.children[1].classList.add("slideToLeft");
+    section3.children[0].classList.add("section-3-description-block_animate");
+    section3.children[1].classList.add("section-3-image-block_animate");
   }
   if (scrollNew > section4.offsetTop) {
-    section4.children[0].classList.add("slideToRight");
-    section4.children[1].classList.add("slideToLeft");
+    section4.children[0].classList.add("section-4-image-block_animate");
+    section4.children[1].classList.add("section-4-description-block_animate");
   }
   if (scrollNew > scrollOld && widthScreen < 680) {
     menu.classList.remove("header_show");
@@ -52,46 +52,34 @@ handleWindowScroll = () => {
 handleWidthScreen();
 
 openMenu = () => {
-  menuButton.children[0].classList.add(
-    "header_pointer-block_menu-button_line1_active"
-  );
-  menuButton.children[1].classList.add(
-    "header_pointer-block_menu-button_line2_active"
-  );
-  menuButton.children[2].classList.add(
-    "header_pointer-block_menu-button_line3_active"
-  );
-  buttonBlock.children[0].classList.remove("close-menu_slideLeft");
-  buttonBlock.children[0].classList.add("open-menu_slideLeft");
-  buttonBlock.children[1].classList.remove("close-menu_slideRight");
-  buttonBlock.children[1].classList.add("open-menu_slideRight");
-  buttonBlock.children[2].classList.remove("close-menu_slideLeft");
-  buttonBlock.children[2].classList.add("open-menu_slideLeft");
-  buttonBlock.children[3].classList.remove("close-menu_slideRight");
-  buttonBlock.children[3].classList.add("open-menu_slideRight");
+  menuButton.children[0].classList.add("menu-button__line-1_active");
+  menuButton.children[1].classList.add("menu-button__line-2_active");
+  menuButton.children[2].classList.add("menu-button__line-3_active");
+  buttonBlock.children[0].classList.remove("header-button_close-left");
+  buttonBlock.children[0].classList.add("header-button_open-left");
+  buttonBlock.children[1].classList.remove("header-button_close-right");
+  buttonBlock.children[1].classList.add("header-button_open-right");
+  buttonBlock.children[2].classList.remove("header-button_close-left");
+  buttonBlock.children[2].classList.add("header-button_open-left");
+  buttonBlock.children[3].classList.remove("header-button_close-right");
+  buttonBlock.children[3].classList.add("header-button_open-right");
   menuIsOpen = true;
   menuButtonIsPressed = true;
 };
 
 closeMenu = () => {
   if (menuButtonIsPressed) {
-    menuButton.children[0].classList.remove(
-      "header_pointer-block_menu-button_line1_active"
-    );
-    menuButton.children[1].classList.remove(
-      "header_pointer-block_menu-button_line2_active"
-    );
-    menuButton.children[2].classList.remove(
-      "header_pointer-block_menu-button_line3_active"
-    );
-    buttonBlock.children[0].classList.remove("open-menu_slideLeft");
-    buttonBlock.children[0].classList.add("close-menu_slideLeft");
-    buttonBlock.children[1].classList.remove("open-menu_slideRight");
-    buttonBlock.children[1].classList.add("close-menu_slideRight");
-    buttonBlock.children[2].classList.remove("open-menu_slideLeft");
-    buttonBlock.children[2].classList.add("close-menu_slideLeft");
-    buttonBlock.children[3].classList.remove("open-menu_slideRight");
-    buttonBlock.children[3].classList.add("close-menu_slideRight");
+    menuButton.children[0].classList.remove("menu-button__line-1_active");
+    menuButton.children[1].classList.remove("menu-button__line-2_active");
+    menuButton.children[2].classList.remove("menu-button__line-3_active");
+    buttonBlock.children[0].classList.remove("header-button_open-left");
+    buttonBlock.children[0].classList.add("header-button_close-left");
+    buttonBlock.children[1].classList.remove("header-button_open-right");
+    buttonBlock.children[1].classList.add("header-button_close-right");
+    buttonBlock.children[2].classList.remove("header-button_open-left");
+    buttonBlock.children[2].classList.add("header-button_close-left");
+    buttonBlock.children[3].classList.remove("header-button_open-right");
+    buttonBlock.children[3].classList.add("header-button_close-right");
     menuIsOpen = false;
   }
 };
