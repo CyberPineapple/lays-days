@@ -11,9 +11,9 @@ let menuIsOpen = false;
 let menuButtonIsPressed = false;
 
 window.addEventListener("resize", () => handleWidthScreen());
-window.addEventListener("load", () => handleWindowLoad());
+window.addEventListener("beforeunload", () => handleWindowLoad());
 window.addEventListener("scroll", () => handleWindowScroll());
-menuButton.addEventListener("click", () => handleMenu());
+menuButton.addEventListener("click", () => toggleMenu());
 buttonCloseMenu.addEventListener("click", () => closeMenu());
 
 handleWidthScreen = () => {
@@ -25,7 +25,7 @@ handleWidthScreen = () => {
 };
 
 handleWindowLoad = () => {
-  setTimeout(() => window.scrollTo(0, 0));
+  window.scrollTo(0, 0);
 };
 
 handleWindowScroll = () => {
@@ -84,10 +84,10 @@ closeMenu = () => {
   }
 };
 
-handleMenu = () => {
+toggleMenu = () => {
   if (menuIsOpen) {
     closeMenu();
-  } else if (!menuIsOpen) {
+  } else {
     openMenu();
   }
 };
